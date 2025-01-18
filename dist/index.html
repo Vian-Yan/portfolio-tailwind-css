@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex justify-between items-center relative">
+          <div class="px-4 group">
+            <a
+              href="#home"
+              class="font-bold text-xl text-primary block py-6 animate-bounce transition duration-700"
+              >Vian</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg w-full max-w-[250px] top-full right-5 lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:block lg:static"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary ease-in-out duration-300"
+                  >
+                    Beranda
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary ease-in-out duration-300"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary ease-in-out duration-300"
+                  >
+                    Tentang Kami
+                  </a>
+                </li>
+                <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary ease-in-out duration-300"
+                  >
+                    Clients Kami
+                  </a>
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary ease-in-out duration-300"
+                  >
+                    Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- hero section start -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Halo Semua 👋, Saya
+              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"
+                >Vian</span
+              >
+              <h2 class="font-medium text-secondary mb-5 lg:2xl">
+                Programer &
+                <span
+                  class="font-bold bg-gradient-to-r from-slate-500 from-10% via-slate-700 via-30% to-slate-900 to-90% bg-clip-text text-transparent"
+                  >Peternak Lebah </span
+                >🐝
+              </h2>
+            </h1>
+            <p class="font-medium text-secondary mb-10 leading-relaxed block">
+              Saya adalah seorang programmer, Saya dapat membangun sebuah proyek
+              yang inovatif dan menarik. Jika anda ingin bertanya, silahkan
+              hubungi saya di kontak yang tersedia.
+            </p>
+            <a
+              href=""
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              >Hubungi Saya</a
+            >
+          </div>
+          <div class="w-full px-4 self-end lg:w-1/2">
+            <div class="mt-10 relative lg:mt-9 lg:right-0">
+              <img src="./img/1.png" alt="dingin" class="max-w-full mx-auto" />
+              <span
+                class="absolute -bottom-10 -z-10 left-1/2 -translate-x-1/2 md:scale-100"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#0f172a"
+                    d="M52.9,-17.4C62.6,12.4,60.1,45.9,41.7,59.8C23.3,73.7,-11,68,-30.5,51.6C-49.9,35.2,-54.5,8,-47,-19C-39.4,-45.9,-19.7,-72.6,1,-73C21.7,-73.3,43.3,-47.2,52.9,-17.4Z"
+                    transform="translate(100 100) scale(1.2)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about section start -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex-wrap flex">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h2 class="uppercase font-bold text-primary mb-4">Tentang Kami</h2>
+            <p class="text-lg text-secondary mb-6 max-w-xl">
+              Kami adalah sekelompok programmer yang berpengalaman di berbagai
+              bidang, mulai dari frontend developer hingga backend developer.
+              Kami mampu membangun proyek-proyek yang inovatif dan menarik.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-primary text-2xl mb-4">
+              Media Sosial
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6">
+              jika anda ingin berteman silahkan ikuti media sosial
+            </p>
+            <div class="flex items-center">
+              <!-- whatsapp -->
+              <a
+                href="https://wa.me/qr/4GJIYEPGN2Z6H1"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  viewBox="0 0 24 24"
+                  class="fill-current"
+                >
+                  <path
+                    d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- facebook-->
+              <a
+                href="https://www.facebook.com/mtm.yan.9"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  viewBox="0 0 24 24"
+                  class="fill-current"
+                >
+                  <path
+                    d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"
+                  ></path>
+                </svg>
+              </a>
+
+              <!-- instagram -->
+              <a
+                href="https://www.instagram.com/viannnn?igsh=MXBpdXV5Y3QzanRkbg=="
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  viewBox="0 0 24 24"
+                  class="fill-current"
+                >
+                  <path
+                    d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- telegram -->
+              <a
+                href="https://t.me/@ViannnV"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="27"
+                  class="fill-current"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- portfolio section start -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="text-4xl font-bold mb-5">Our Work</h4>
+            <p class="text-lg text-secondary md:text-lg">
+              We create stunning digital experiences that connect brands and
+              clients. Our portfolio showcases some of our most recent projects.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full flex-wrap justify-center px-4 xl:w-10/12 border xl:mx-auto"
+        >
+          <div class="px-4 w-full md:w-1/2 lg:w-1/2">
+            <div
+              class="rounded-xl border overflow-hidden shadow-xl mb-10 bg-white"
+            >
+              <img
+                src="https://hackernoon.imgix.net/images/MJpFVUEItkSdoh38rYo60VT7RfH3-so252834.jpeg"
+                alt=""
+                width="w-full"
+              />
+
+              <div class="flex justify-between items-center px-4 py-4">
+                <h3
+                  class="text-xl font-semibold text-dark hover:text-primary cursor-default"
+                >
+                  Game
+                </h3>
+                <a
+                  href="./404.html"
+                  class="block border border-slate-500 py-2 px-4 rounded-md bg-slate-400 text-pr hover:text-white hover:bg-slate-600"
+                  >Mainkan</a
+                >
+              </div>
+              <p class="text-base text-secondary py-2 px-4">
+                A game that brings together players from different backgrounds
+                and challenges them to overcome obstacles.
+              </p>
+            </div>
+          </div>
+          <div class="px-4 w-full md:w-1/2 lg:w-1/2">
+            <div
+              class="rounded-xl border overflow-hidden shadow-xl mb-10 bg-white"
+            >
+              <img
+                src="https://hackernoon.imgix.net/images/MJpFVUEItkSdoh38rYo60VT7RfH3-b31y28zh.jpeg"
+                alt=""
+                width="w-full"
+              />
+
+              <div class="flex justify-between items-center px-4 py-4">
+                <h3
+                  class="text-xl font-semibold text-dark hover:text-primary cursor-default"
+                >
+                  Game
+                </h3>
+                <a
+                  href="./404.html"
+                  class="block border border-slate-500 py-2 px-4 rounded-md bg-slate-400 text-pr hover:text-white hover:bg-slate-600"
+                  >Mainkan</a
+                >
+              </div>
+              <p class="text-base text-secondary py-2 px-4">
+                Games are structured forms of play or competitive often
+                undertaken for enjoyment and entertainment.
+              </p>
+            </div>
+          </div>
+          <div class="px-4 w-full md:w-1/2 lg:w-1/2">
+            <div
+              class="rounded-xl border overflow-hidden shadow-xl mb-10 bg-white"
+            >
+              <img
+                src="https://hackernoon.imgix.net/images/MJpFVUEItkSdoh38rYo60VT7RfH3-ol3b2889.jpeg"
+                alt=""
+                width="w-full"
+              />
+
+              <div class="flex justify-between items-center px-4 py-4">
+                <h3
+                  class="text-xl font-semibold text-dark hover:text-primary cursor-default"
+                >
+                  Web
+                </h3>
+                <a
+                  href="./404.html"
+                  class="block border border-slate-500 py-2 px-4 rounded-md bg-slate-400 text-pr hover:text-white hover:bg-slate-600"
+                  >Lihat Selengkapnya</a
+                >
+              </div>
+              <p class="text-base text-secondary py-2 px-4">
+                A network of interconnected documents and resources that can be
+                accessed through the internet, using hypertext links and
+                protocols.
+              </p>
+            </div>
+          </div>
+          <div class="px-4 w-full md:w-1/2 lg:w-1/2">
+            <div
+              class="rounded-xl border overflow-hidden shadow-xl mb-10 bg-white"
+            >
+              <img
+                src="https://hackernoon.imgix.net/images/MJpFVUEItkSdoh38rYo60VT7RfH3-e3p288y.jpeg"
+                alt=""
+                width="w-full"
+              />
+
+              <div class="flex justify-between items-center px-4 py-4">
+                <h3
+                  class="text-xl font-semibold text-dark hover:text-primary cursor-default"
+                >
+                  Game
+                </h3>
+                <a
+                  href="./404.html"
+                  class="block border border-slate-500 py-2 px-4 rounded-md bg-slate-400 text-pr hover:text-white hover:bg-slate-600"
+                  >Mainkan</a
+                >
+              </div>
+              <p class="text-base text-secondary py-2 px-4">
+                Games can take various forms, such as video games, board games,
+                or sports, all designed to entertain and provide a sense of
+                achievement and enjoyment.
+              </p>
+            </div>
+          </div>
+
+          <div class="px-4 w-full md:w-1/2 lg:w-1/2">
+            <div
+              class="rounded-xl border overflow-hidden shadow-xl mb-10 bg-white"
+            >
+              <img
+                src="https://hackernoon.imgix.net/images/AGuEemtBxUPcEFUTAVhh2ySf26D3-9rn3kb6.webp"
+                alt=""
+                width="w-full"
+              />
+
+              <div class="flex justify-between items-center px-4 py-4">
+                <h3
+                  class="text-xl font-semibold text-dark hover:text-primary cursor-default"
+                >
+                  Game
+                </h3>
+                <a
+                  href="./404.html"
+                  class="block border border-slate-500 py-2 px-4 rounded-md bg-slate-400 text-pr hover:text-white hover:bg-slate-600"
+                  >Lihat Selengkapnya</a
+                >
+              </div>
+              <p class="text-base text-secondary py-2 px-4">
+                A web design for a wedding website that showcases the wedding
+                ceremony, reception, and other events. The design includes a
+                clean and modern layout, responsive design, and a customizable
+                theme that can be easily customized by the wedding planner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!--Clients Section  start-->
+    <section id="clients" class="pt-36 pb-16 bg-slate-300">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="text-4xl font-semibold mb-5">Our Clients</h4>
+            <p class="text-lg text-secondary">
+              Our clients have been satisfied with our work and continue to
+              trust
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a
+              href=""
+              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-500 lg:mx-6 xl:mx-8"
+            >
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/github-2.svg"
+                alt="Github"
+              />
+            </a>
+            <a
+              href=""
+              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-500 lg:mx-6 xl:mx-8"
+            >
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/google-1-1.svg"
+                alt="Google"
+              />
+            </a>
+            <a
+              href=""
+              class="max-w-[150px] mx-4 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-500 lg:mx-6 xl:mx-8"
+            >
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/tesla-9.svg"
+                alt="tesla"
+              />
+            </a>
+            <a
+              href=""
+              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-500 lg:mx-6 xl:mx-8"
+            >
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/coca-cola-2021.svg"
+                alt="CocaCola"
+              />
+            </a>
+            <a
+              href=""
+              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-500 lg:mx-6 xl:mx-8"
+            >
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/indomie-1.svg"
+                alt="indomie"
+              />
+            </a>
+            <a
+              href=""
+              class="max-w-[150px] mx-4 py-4 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-500 lg:mx-6 xl:mx-8"
+            >
+              <img
+                src="https://cdn.worldvectorlogo.com/logos/tokopedia.svg"
+                alt="tokopedia"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Clients Section  end-->
+
+    <!-- section contact start  -->
+    <section id="contact" class="pb-36 pt-36">
+      <div class="container">
+        <div class="w-full px-10">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-pretty">Contact</h4>
+            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-5xl">
+              Hubungi Kami
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              If you wish to contact us, please fill in the form below. We will
+              contact you soon.
+            </p>
+          </div>
+        </div>
+        <form>
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base text-primary font-bold"
+                >Nama</label
+              >
+              <input
+                type="text"
+                id="name"
+                placeholder="Vian"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base text-primary font-bold"
+                >Email</label
+              >
+              <input
+                type="email"
+                placeholder="vian@example.com"
+                id="email"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base text-primary font-bold"
+                >Pesan</label
+              >
+              <input
+                type="email"
+                placeholder="tulis pesan disini...."
+                id="message"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1 h-32"
+              />
+            </div>
+            <div class="w-full px-4">
+              <button
+                class="font-semibold bg-secondary p-3 rounded-full text-white hover:opacity-75 text-base w-full transition duration-500"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- section contact end -->
+
+    <!-- footer start -->
+    <section
+      class="bg-gradient-to-r from-secondary to-slate-500 to-90% pt-36 pb-36"
+    >
+      <div class="container">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full px-4 font-medium text-slate-300 md:w-1/3 mb-10">
+            <h2 class="mb-5 text-4xl font-bold text-white">Vian</h2>
+            <h3 class="mb-2 text-4xl font-bold">Hubungi Kami</h3>
+            <p>vianyan330@gmail.com</p>
+            <p>
+              Jl. Raya Labuhan Lombok No.2, Apitaik, Kec. Pringgabaya, Kabupaten
+              Lombok Timur, Nusa Tenggara Bar. 83654, Indonesia
+            </p>
+            <p>Dasan Bagek</p>
+          </div>
+          <div class="w-full px-4 md:w-1/3 mb-10 text-center">
+            <h3 class="mb-5 text-xl font-semibold text-white">Kategori</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="./404.html"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                >
+                  Programming
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./404.html"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Web</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./404.html"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >game</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 md:w-1/3 text-center">
+            <h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
+            <ul class="text-slate-300">
+              <li class="group">
+                <a
+                  href="#home"
+                  class="text-base py-2 group-hover:text-primary ease-in-out inline-block"
+                >
+                  Beranda
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#portfolio"
+                  class="text-base py-2 group-hover:text-primary ease-in-out inline-block"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="group">
+                <a
+                  href="#about"
+                  class="text-base py-2 group-hover:text-primary ease-in-out inline-block"
+                >
+                  Tentang Kami
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#clients"
+                  class="text-base py-2 group-hover:text-primary ease-in-out inline-block"
+                >
+                  Clients Kami
+                </a>
+              </li>
+
+              <li class="group">
+                <a
+                  href="#contact"
+                  class="text-base py-2 group-hover:text-primary ease-in-out inline-block"
+                >
+                  Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- whatsapp -->
+            <a
+              href="https://wa.me/qr/4GJIYEPGN2Z6H1"
+              target="_blank"
+              aria-label="Kirim pesan melalui whatsapp"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center hover:border-primary hover:bg-primary hover:text-white border-secondary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"
+                ></path>
+              </svg>
+            </a>
+            <!-- facebook-->
+            <a
+              href="https://www.facebook.com/mtm.yan.9"
+              target="_blank"
+              aria-label="Kirim pesan melalui facebook"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"
+                ></path>
+              </svg>
+            </a>
+
+            <!-- instagram -->
+            <a
+              href="https://www.instagram.com/viannnn?igsh=MXBpdXV5Y3QzanRkbg=="
+              target="_blank"
+              aria-label="Kirim pesan melalui instagram"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"
+                ></path>
+              </svg>
+            </a>
+            <!-- telegram -->
+            <a
+              href="https://t.me/@ViannnV"
+              target="_blank"
+              aria-label="Kirim pesan melalui telegram"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-secondary hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="27"
+                class="fill-current"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <p class="text-center text-xs font-medium text-slate-300">
+            Dibuat dengan <span class="text-pink-500">❤️</span> oleh
+            <a
+              href="https://www.facebook.com/mtm.yan.9"
+              target="_blank"
+              class="font-bold"
+              aria-label="Kirim pesan melalui facebook"
+              >Vian</a
+            >, menggunakan
+            <a href="https://tailwindcss.com" class="font-bold text-sky-300"
+              >TailwindCSS</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
+
+    <!-- Back to top Start -->
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+      id="to-top"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
