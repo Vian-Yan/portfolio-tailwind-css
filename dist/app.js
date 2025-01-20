@@ -18,18 +18,97 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //nav fixed
+// window.addEventListener("scroll", () => {
+//   const isScrolled = window.scrollY > 0;
+//   const navbar = document.querySelector("header");
+//   const toTop = document.querySelector("#to-top");
+//   if (isScrolled) {
+//     navbar.classList.add("navbar-fixed");
+//     toTop.classList.add("flex");
+//     toTop.classList.remove("hidden");
+//   } else {
+//     navbar.classList.remove("navbar-fixed");
+//     toTop.classList.add("hidden");
+//   }
+// });
+
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector("header");
-  navbar.classList.toggle("navbar-fixed", window.scrollY > 0);
+  const isScrolled = window.scrollY > 0;
+  const toTop = document.querySelector("#to-top");
+  navbar.classList.toggle("navbar-fixed", isScrolled);
+  toTop.classList.toggle("flex", isScrolled);
+  toTop.classList.toggle("hidden", !isScrolled);
 });
 
 // hamburger
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
+
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("hamburger-active");
-  console.log("hamburger");
 });
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("hidden");
+});
+
+// klik di luar hamburger
+
+window.addEventListener("click", (e) => {
+  if (e.target != hamburger && e.target != navMenu) {
+    hamburger.classList.remove("hamburger-active");
+    navMenu.classList.add("hidden");
+  }
+});
+
+//dark mode
+
+// const darkModeToggle = document.querySelector("#dark-toggle");
+// const html = document.querySelector("html");
+
+// darkModeToggle.addEventListener("change", () => {
+//   // Menggunakan operator ternary untuk menambahkan atau menghapus kelas
+//   darkModeToggle.checked
+// ? html.classList.add("dark-gray")
+//     : html.classList.remove("dark-gray");
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const darkModeToggle = document.querySelector("#dark-toggle");
+  const html = document.querySelector("html");
+  const darkModeSistem = window.matchMedia("(prefers-color-scheme: dark)");
+
+  // Periksa preferensi mode gelap yang tersimpan
+  if (localStorage.getItem("darkMode") === "enabled") {
+    darkModeToggle.checked = true;
+    html.classList.add("dark");
+  }
+
+  darkModeToggle.addEventListener("change", () => {
+    if (darkModeToggle.checked) {
+      html.classList.add("dark");
+
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      html.classList.remove("dark");
+      localStorage.setItem("darkMode", "disabled");
+    }
+  });
+
+  darkModeSistema.addEventListener("change", () => {
+    if (darkModeSistem.matches) {
+      html.classList.add("dark");
+      darkModeToggle.checked = true;
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      html.classList.remove("dark");
+      darkModeToggle.checked = false;
+      localStorage.setItem("darkMode", "disabled");
+    }
+  });
+  if (darkModeSistem.matches) {
+    html.classList.add("dark");
+    darkModeToggle.checked = true;
+    localStorage.setItem("darkMode", "enabled");
+  }
 });
