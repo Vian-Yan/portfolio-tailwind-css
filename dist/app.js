@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "https://media.giphy.com/media/tXNMqUmtvyuIw/giphy.gif?cid=ecf05e47shrxk8nzem0govbywegi2yw95i8osegcfzbymswl&ep=v1_gifs_search&rid=giphy.gif&ct=g",
   ];
 
-  const random = Math.floor(Math.random() * gifs.length);
-  const randomGif = gifs[random];
-  document.querySelector("#gif-img").src = randomGif;
+  const random = gifs[Math.floor(Math.random() * gifs.length)];
+  // const randomGif = gifs[random];
+  document.querySelector("#gif-img").src = random;
 });
 
 //nav fixed
